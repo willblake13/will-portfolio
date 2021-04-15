@@ -10,7 +10,7 @@ import Contact from './contents/Contact';
 
   function App() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <div className="App">
           <Navbar/>
@@ -34,7 +34,7 @@ import Contact from './contents/Contact';
           </Route>
           </div>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
   export default App;
