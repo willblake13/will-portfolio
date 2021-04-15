@@ -10,10 +10,10 @@ import Contact from './contents/Contact';
 
   function App() {
     return (
-      <BrowserRouter basename='/will-portfolio'>
+
           <div className="App">
           <Navbar/>
-          <Switch>
+          <HashRouter>
             <Route exact path='/'>
               <Redirect to='/home'/>
             </Route>
@@ -32,9 +32,9 @@ import Contact from './contents/Contact';
             <Route path='/about'>
               <About />
             </Route>
-          </Switch>
+          </HashRouter>
           </div>
-      </BrowserRouter>
+
     );
   }
   export default App;
