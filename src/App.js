@@ -1,6 +1,6 @@
 import React from 'react';
 //import './App.css';
-import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
+import {HashRouter, BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './contents/Home';
 import About from './contents/About';
@@ -10,11 +10,11 @@ import Contact from './contents/Contact';
 
   function App() {
     return (
-      <BrowserRouter basename ={process.env.PUBLIC_URL}>
+      <HashRouter basename ={process.env.PUBLIC_URL}>
         <Switch>
           <div className="App">
           <Navbar/>
-          <Route path='/will-portfolio/'>
+          <Route exact path='/will-portfolio/'>
             <Redirect to='/home'/>
           </Route>
           <Route exact path='/'>
@@ -40,7 +40,7 @@ import Contact from './contents/Contact';
           </Route>
           </div>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
   export default App;
