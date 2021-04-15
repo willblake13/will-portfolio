@@ -10,7 +10,7 @@ import Contact from './contents/Contact';
 
   function App() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename ={process.env.PUBLIC_URL}>
         <Switch>
           <div className="App">
           <Navbar/>
