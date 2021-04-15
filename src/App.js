@@ -10,7 +10,7 @@ import Contact from './contents/Contact';
 
   function App() {
     return (
-      <HashRouter basename ={process.env.PUBLIC_URL}>
+      <BrowserRouter basename ={process.env.PUBLIC_URL}>
         <Switch>
           <div className="App">
           <Navbar/>
@@ -34,7 +34,7 @@ import Contact from './contents/Contact';
           </Route>
           </div>
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
   export default App;
