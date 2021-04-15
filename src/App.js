@@ -13,26 +13,26 @@ import Contact from './contents/Contact';
       <BrowserRouter basename='/will-portfolio'>
           <div className="App">
           <Navbar/>
-
-          <Route exact path='/'>
-            <Redirect to='/home'/>
-          </Route>
-          <Route exact path='/home'>
-            <HomePage />
-          </Route>
-          <Route path='/contact'>
-            <Contact/>
-          </Route>
-          <Route path='/education'>
-            <Education />
-          </Route>
-          <Route path='/skills'>
-            <Skills/>
-          </Route>
-          <Route path='/about'>
-            <About />
-          </Route>
-
+          <Switch>
+            <Route exact path='/'>
+              <Redirect to='/home'/>
+            </Route>
+            <Route exact path='/home'>
+              <HomePage />
+            </Route>
+            <Route path='/contact'>
+              <Contact/>
+            </Route>
+            <Route path='/education'>
+              <Education />
+            </Route>
+            <Route path='/skills'>
+              <Skills/>
+            </Route>
+            <Route path='/about'>
+              <About />
+            </Route>
+          </Switch>
           </div>
       </BrowserRouter>
     );
