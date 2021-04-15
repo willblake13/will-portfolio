@@ -11,7 +11,7 @@ import Contact from './contents/Contact';
   function App() {
     return (
           <div className="App">
-          <BrowserRouter>
+          <HashRouter>
           <Navbar/>
               <Switch>
               <Route exact path='/'>
@@ -36,7 +36,7 @@ import Contact from './contents/Contact';
               <h1>Page Not found</h1>
               </Route>
               </Switch>
-          </BrowserRouter>
+          </HashRouter>
           </div>
 
     );
