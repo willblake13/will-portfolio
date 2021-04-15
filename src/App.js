@@ -35,6 +35,9 @@ import Contact from './contents/Contact';
           <Route path='/about'>
             <About />
           </Route>
+          <Route>
+            <h1>Page Not Found</h1>
+          </Route>
           </div>
         </Switch>
       </BrowserRouter>
