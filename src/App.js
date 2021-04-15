@@ -11,8 +11,10 @@ import Contact from './contents/Contact';
   function App() {
     return (
           <div className="App">
-          <Navbar/>
+
+
           <HashRouter>
+          <Navbar/>
               <Switch>
               <Route exact path='/'>
                 <Redirect to='/home'/>
