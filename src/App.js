@@ -14,7 +14,7 @@ import Contact from './contents/Contact';
         <Switch>
           <div className="App">
           <Navbar/>
-          <Route path='/will-portfolio'>
+          <Route path='/will-portfolio/'>
             <Redirect to='/home'/>
           </Route>
           <Route exact path='/'>
