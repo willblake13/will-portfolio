@@ -10,31 +10,30 @@ import Contact from './contents/Contact';
 
   function App() {
     return (
-
           <div className="App">
           <Navbar/>
-          <BrowserRouter>
-            <Switch>
-            <Route exact path='/'>
-              <Redirect to='/home'/>
-            </Route>
-            <Route exact path='/home'>
-              <HomePage />
-            </Route>
-            <Route path='/contact'>
-              <Contact/>
-            </Route>
-            <Route path='/education'>
-              <Education />
-            </Route>
-            <Route path='/skills'>
-              <Skills/>
-            </Route>
-            <Route path='/about'>
-              <About />
-            </Route>
+          <HashRouter>
+              <Switch>
+              <Route exact path='/'>
+                <Redirect to='/home'/>
+              </Route>
+              <Route exact path='/home'>
+                <HomePage />
+              </Route>
+              <Route path='/contact'>
+                <Contact/>
+              </Route>
+              <Route path='/education'>
+                <Education />
+              </Route>
+              <Route path='/skills'>
+                <Skills/>
+              </Route>
+              <Route path='/about'>
+                <About />
+              </Route>
             </Switch>
-          </BrowserRouter>
+          </HashRouter>
           </div>
 
     );
