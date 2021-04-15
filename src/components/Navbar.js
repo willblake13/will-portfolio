@@ -27,6 +27,7 @@ class Navbar extends Component {
           <li><NavLink to="/education"  activeClassName="active">Education</NavLink></li>
           <li><NavLink to="/skills"  activeClassName="active">Skills</NavLink></li>
           <li><NavLink  to="/contact"  activeClassName="active">Contact</NavLink></li>
+          <li><NavLink to="/websites" activeClassName="active">Websites</NavLink></li>
         </ul>
       </nav>
     );

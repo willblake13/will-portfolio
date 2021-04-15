@@ -7,6 +7,7 @@ import About from './contents/About';
 import Education from './contents/Education';
 import Skills from './contents/Skills';
 import Contact from './contents/Contact';
+import Websites from './contents/Websites';
 
   function App() {
     return (
@@ -32,6 +33,7 @@ import Contact from './contents/Contact';
               <Route path='/about'>
                 <About />
               </Route>
+              <Route path='/websites' component={Websites}/>
               <Route>
               <h1>Page Not found</h1>
               </Route>
