@@ -11,7 +11,6 @@ import Contact from './contents/Contact';
   function App() {
     return (
       <HashRouter>
-        <Switch>
           <div className="App">
           <Navbar/>
           <Route exact path='/'>
@@ -33,7 +32,6 @@ import Contact from './contents/Contact';
             <About />
           </Route>
           </div>
-        </Switch>
       </HashRouter>
     );
   }
