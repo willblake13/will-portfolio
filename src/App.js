@@ -13,7 +13,7 @@ import Contact from './contents/Contact';
       <BrowserRouter basename='/will-portfolio'>
           <div className="App">
           <Navbar/>
-          <Switch>
+
           <Route exact path='/'>
             <Redirect to='/home'/>
           </Route>
@@ -32,7 +32,7 @@ import Contact from './contents/Contact';
           <Route path='/about'>
             <About />
           </Route>
-          </Switch>
+
           </div>
       </BrowserRouter>
     );
