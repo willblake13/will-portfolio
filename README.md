@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Will Blake React portfolio
 
 A simple portfolio app built with React.js
