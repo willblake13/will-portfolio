@@ -13,7 +13,8 @@ import Contact from './contents/Contact';
 
           <div className="App">
           <Navbar/>
-          <HashRouter>
+          <BrowserRouter>
+            <Switch>
             <Route exact path='/'>
               <Redirect to='/home'/>
             </Route>
@@ -32,7 +33,8 @@ import Contact from './contents/Contact';
             <Route path='/about'>
               <About />
             </Route>
-          </HashRouter>
+            </Switch>
+          </BrowserRouter>
           </div>
 
     );
