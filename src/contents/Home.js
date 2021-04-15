@@ -12,6 +12,7 @@ class HomePage extends Component {
           speed={100}
           eraseDelay={700}
         />
+        <br></br>
         <Social/>
       </div>
     )
